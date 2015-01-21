@@ -1,0 +1,23 @@
+h1 Category+Indicator Manage
+.uk-grid
+  .uk-width-1-4
+    .uk-form
+      fieldset(data-uk-margin='{"cls": "uk-margin-small-left"}')
+        legend query and create
+        label Category:
+        select(name='category_id')
+        label Indicator:
+        select(name='indicator_id')
+        button.uk-button.create-button
+          i.uk-icon-plus
+        button.uk-button.query-button
+          i.uk-icon-search
+
+  .uk-width-3-4
+    table.uk-table
+      thead
+        tr
+          th Category
+          th Indicator
+          th
+      tbody.raw-table

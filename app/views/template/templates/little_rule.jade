@@ -1,0 +1,20 @@
+h3 little rule
+
+select(name='name')
+  option(value='') please select a name
+.uk-form
+  input(type='text', name='newname', placeholder='template name')
+  input(type='text', name='mode', placeholder='mode name')
+  button.uk-button.save-rule Save
+  button.uk-button.destroy-rule Delete
+  button.uk-button.add-rule Add
+  button.uk-button.paste-componnet Paste Component
+  textarea.uk-width-1-2.profile-variables-textarea(name='profile.variables', placeholder='data variables', rows=10)
+
+  textarea.uk-width-1-2.profile-components-textarea(name='profile.components', placeholder='components', rows=10)
+
+br
+h3 Notice
+p please do not modify or delete the line
+p.uk-text-warning //start=====do=====not=====component=====modify=====end
+p.uk-text-danger because this is the divider between components, if you add a new component manually, please add this line either.

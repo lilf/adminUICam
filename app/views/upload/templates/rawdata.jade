@@ -1,0 +1,28 @@
+h1 Upload Rawdata
+.uk-grid
+  .uk-width-1-4
+    .uk-form
+      fieldset(data-uk-margin='{"cls": "uk-margin-small-left"}')
+        legend create
+        label Sources:
+        select(name='source_id')
+        label Indicator:
+        select(name='indicator_id')
+        label Modes:
+        select(name='mode_id')
+        button.import-from-style.uk-button.uk-hidden(data-uk-toggle='{target:".import-from-style"}')
+          i.uk-icon-plus
+          span  file
+        button.import-from-style.uk-button(data-uk-toggle='{target:".import-from-style"}')
+          i.uk-icon-plus
+          span  text
+        button.uk-button.preview-button
+          i.uk-icon-eye
+        textarea.import-from-style.uk-hidden(name='from_text', placeholder='place you csv text here', rows=1)
+        select.import-from-style(name='encoding')
+          option UTF-8
+          option BIG5
+          option GBK
+        input.import-from-style(type='file', name='from_file')
+  .uk-width-3-4
+    .uk-panel.uk-panel-box.uk-margin-top.preview-rawdata

@@ -1,0 +1,16 @@
+
+table.uk-table.uk-table-condensed
+  tbody
+    tr
+      each value, name in data
+        td
+          strong(name='name')= name
+          span &nbsp;:&nbsp;
+          span.for-show(name='#{name}-value')= value
+          input.uk-width-1-1.for-edit(type='text,' name=name, value=value)
+      td
+
+        button.uk-button.edit-button.for-show edit
+        button.uk-button.destroy-button.for-show destroy
+        button.uk-button.save-button.for-edit save
+        button.uk-button.cancel-button.for-edit cancel

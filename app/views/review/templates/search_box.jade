@@ -1,0 +1,14 @@
+.uk-form
+  fieldset(data-uk-margin='{"cls": "uk-margin-small-left"}')
+    legend(name='created_at') time provided
+    span time range:
+    input(type='text', data-uk-datepicker='{format:"YYYY-MM-DD"}', name='start_date', placeholder='start date')
+    input(type='text', data-uk-datepicker='{format:"YYYY-MM-DD"}', name='end_date', placeholder='end date')
+    span username:
+    select(name='username')
+    span type:
+    select(name='type')
+    span table:
+    select(name='table')
+    button.uk-button.search-button
+      i.uk-icon-search

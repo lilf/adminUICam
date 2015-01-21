@@ -1,0 +1,17 @@
+.uk-form
+  fieldset(data-uk-margin='{"cls": "uk-margin-small-left"}')
+    legend query and create
+    select(name='mode_id')
+    select(name='column_id')
+    button.uk-button.create-button
+      i.uk-icon-plus
+    button.uk-button.query-button
+      i.uk-icon-search
+
+table.uk-table
+  thead
+    tr
+      th Mode
+      th Column
+      th
+  tbody.raw-table

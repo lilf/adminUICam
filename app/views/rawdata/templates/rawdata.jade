@@ -1,0 +1,18 @@
+h1 Rawdata Manage
+.uk-grid
+
+  .uk-width-1-4
+    ul.uk-tab.uk-active(data-uk-tab='{connect:"#tab-content"}')
+      li.uk-active
+        a(href='#') By Reach
+      li
+        a(href='#') By Column
+
+    ul#tab-content.uk-switcher.uk-margin
+      li.uk-active
+        #search-by-imrs
+      li
+        #search-by-column
+
+  .uk-width-3-4
+    #rawdata-list

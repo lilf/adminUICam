@@ -1,0 +1,34 @@
+span.uk-form
+  button.uk-margin-small-left.uk-button.uk-hidden(data-uk-toggle='{target:".#{toggleClass}"}', class=toggleClass)
+    i.uk-icon-plus
+    span  file
+  button.uk-margin-small-left.uk-button(data-uk-toggle='{target:".#{toggleClass}"}', class=toggleClass)
+    i.uk-icon-plus
+    span  text
+  button.uk-margin-small-left.uk-button.preview-button
+    i.uk-icon-eye
+  textarea.uk-margin-small-left.uk-hidden(name='from_text', placeholder='place you csv text here', rows=1, class=toggleClass)
+  select.uk-margin-small-left(name='encoding', class=toggleClass)
+    option UTF-8
+    option BIG5
+    option GBK
+  input.uk-margin-small-left(type='file', name='from_file', class=toggleClass)
+  span.uk-margin-small-left fields: &nbsp;[
+  span.uk-text-danger= fields
+  span ]
+  span.uk-margin-small-left.batch-status
+    i.uk-icon-spinner.uk-icon-spin
+    span &nbsp;
+    span.current-row.uk-text-success
+    div.uk-margin-small-left.uk-progress
+      div.uk-progress-bar(style='width: 0%;') 0%
+div(id='modal-#{toggleClass}').uk-modal
+  .uk-modal-dialog.uk-modal-dialog-large
+    a.uk-modal-close.uk-close
+    span fields: &nbsp;[
+    span.uk-text-danger= fields
+    span ]
+    .uk-overflow-container
+      table.uk-table(id='table-#{toggleClass}')
+    button.uk-button.uk-modal-close Cancel
+    button.uk-button.ok-button OK

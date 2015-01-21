@@ -1,0 +1,110 @@
+span.elipse{
+  text-indent: 1em;
+  background: #fafafa;
+  color: #444444;
+  font-size: 12px;
+  line-height: 18px;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  display: block;
+}
+
+.active-component{
+  border-color: #888 !important;
+  border-style: solid !important;
+  border-radius: 10px;
+}
+#component_type > .component-box:first-child {
+  margin-left: 0;
+}
+.component-box {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin:10px;
+  width: 40px;
+  text-align: center;
+}
+.component-box:hover {
+  cursor: move;
+  background-color: #444;
+  color: #fff;
+}
+#components ul {
+  list-style: none;
+}
+#components ul li + li {
+  margin-top: 10px;
+}
+#components ul li {
+  margin: 0 -5px;
+  padding: 5px 5px;
+  border:2px solid #fafafa;
+}
+#components ul li >button.remove-component {
+  float: right;
+}
+#components ul li:hover {
+  cursor: move;
+  border-style:dashed;
+  border-color: #ddd;
+  border-radius: 10px;
+}
+.fixed-width {
+  table-layout: fixed;
+}
+.fixed-width  thead>tr>th {
+  border-bottom: 2px solid #ddd;
+  width:100%;
+  max-width:100%;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: left !important;
+}
+.fixed-width thead>tr>th {
+  color: #7a7a7a;
+  font-weight: bold;
+}
+.fixed-width thead>tr>td, .fixed-width tbody>tr>td, .fixed-width tfoot>tr>td {
+background-color: white;
+border-top: 1px solid #e5e5e5;
+line-height: 1;
+height: 2.5em;
+}
+.fixed-width td:nth-child(1),
+.fixed-width th:nth-child(1) {
+  width:5em;
+  min-width:5em;
+  max-width:5em;
+  /*text-align: center;*/
+}
+.fixed-width td:nth-child(10),
+.fixed-width th:nth-child(10) {
+  width:5em;
+  min-width:5em;
+  max-width:5em;
+  text-align: center;
+}
+.fixed-width thead,.fixed-width tbody {
+  width: 100%;
+  max-width: 100%
+}
+.period { width: 50px !important;}
+.xf { width: 78px !important; }
+.source { width: 50px !important; }
+.publisher { width: 50px !important; }
+.zb { width: 50px !important; }
+.updateTime { width: 90px !important; }
+.dataTime { width: 50px !important; }
+.zb { width: 60px !important; }
+.ms { width: 60px !important; }
+.lb {text-align: left !important; }
+.input-fixed .selectize-input input {
+  position: absolute;
+  top: -3px;
+  height: 17px !important;
+}
